@@ -30,7 +30,8 @@ def multiplicar(a,b)
 	end
 	imprimir @c
 end
-
+=begin
+<<<<<<< HEAD
 def imprimir(array)
 	$row.times do |i|
 		$colum.times do |j|
@@ -43,3 +44,32 @@ imprimir a
 imprimir b
 sumar(a,b)
 multiplicar(a,b)
+=======
+
+def imprimir(array)
+	$row.times do |i|
+		$colum.times do |j|
+			print array[i][j].to_s + " "
+		end
+		puts "\n"
+	end
+	puts "\n"
+end
+>>>>>>> development_carlos
+=end
+
+def imprimir(array)
+	$row.times do |i|
+		$colum.times do |j|
+			print array[i][j].to_s + " "
+		end
+		puts "\n"
+	end
+	puts "\n"
+end
+
+imprimir a
+imprimir b
+sumar(a,b)
+multiplicar(a,b)
+
