@@ -15,4 +15,17 @@ def sumar(a,b)
 	end
 	imprimir @c
 end
-
+def multiplicar(a,b)
+	@c = Array.new($row) { Array.new($colum) }
+	@acumulado = 0
+	$row.times do |i|
+		$colum.times do |j|
+			@acumulado = 0
+			$row.times do |k|
+				@acumulado += a[i][k] * b[k][j]
+			end
+			@c[i][j] = @acumulado
+		end
+	end
+	imprimir @c
+end
