@@ -29,3 +29,14 @@ def multiplicar(a,b)
 	end
 	imprimir @c
 end
+
+
+def imprimir(array)
+	$row.times do |i|
+		$colum.times do |j|
+			print array[i][j].to_s + " "
+		end
+		puts "\n"
+	end
+	puts "\n"
+end
